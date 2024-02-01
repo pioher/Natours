@@ -7,10 +7,12 @@ Dark green: #28b485
 
 */
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
@@ -25,6 +27,7 @@ body {
   line-height: 1.7;
   color: #777;
   padding: 3rem;
+  box-sizing: border-box;
 }
 
 .header {
@@ -42,17 +45,17 @@ body {
   position: relative;
 }
 
-.logo-box {
+.header-logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-.logo {
+.header-logo {
   height: 3.5rem;
 }
 
-.heading-box {
+.header-text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -69,11 +72,11 @@ body {
   margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 3.5rem;
 
   animation: moveInLeft 1s ease-out;
 
@@ -89,11 +92,11 @@ body {
   */
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 17.4px;
+  letter-spacing: 1.75rem;
 
   animation-name: moveInRight;
   animation-duration: 1s;
@@ -143,19 +146,19 @@ body {
   }
 }
 
-.white-btn {
+.btn--white {
   background-color: #fff;
   color: #777;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
 
   /* Dodaje początkowy stan animacji zanim animacja się wykona */
   animation-fill-mode: backwards;
 }
 
-.white-btn::after {
+.btn--white::after {
   background-color: #fff;
 }
 
@@ -167,7 +170,7 @@ body {
   text-decoration: none;
   letter-spacing: -1px;
   text-align: center;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: relative;
 
   transition: all 0.2s;
@@ -188,7 +191,7 @@ body {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
