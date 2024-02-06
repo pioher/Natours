@@ -1,4 +1,20 @@
 @charset "UTF-8";
+/*
+0 - 600px       Telefon
+600 - 900px     Tablet w trybie portretowym
+900 - 1200px    Tablet horyzontalnie
+1200 - 1800px   Default
+1200+px         Duże ekrany
+
+
+$breakpoint argumenty:
+-telefon
+-tablet
+-tablet horyzontal
+-duży ekran
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -9,6 +25,15 @@
 html {
   /* 1rem = 10px */
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
