@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" href="img/favicon.png" />
 
+    <script defer src="js/script.js"></script>
+
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
@@ -27,19 +29,27 @@
       <div class="navigation-nav">
         <ul class="navigation-list">
           <li class="navigaion-item">
-            <a href="#" class="navigation-link"><span>01</span>About Natours</a>
+            <a href="#about" class="navigation-link"
+              ><span>01</span>About Natours</a
+            >
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link"><span>02</span>Your benefits</a>
+            <a href="#features" class="navigation-link"
+              ><span>02</span>Your benefits</a
+            >
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link"><span>03</span>Popular tours</a>
+            <a href="#tours" class="navigation-link"
+              ><span>03</span>Popular tours</a
+            >
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link"><span>04</span>Stories</a>
+            <a href="#stories" class="navigation-link"
+              ><span>04</span>Stories</a
+            >
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link"><span>05</span>Book now</a>
+            <a href="#book" class="navigation-link"><span>05</span>Book now</a>
           </li>
         </ul>
       </div>
@@ -58,7 +68,7 @@
     </header>
 
     <main>
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             Exiciting tours for adventurous people
@@ -128,7 +138,7 @@
           </div>
         </div>
       </section>
-      <section class="section-features">
+      <section class="section-features" id="features">
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
@@ -180,7 +190,7 @@
           </div>
         </div>
       </section>
-      <section class="section-tours" id="section-tours">
+      <section class="section-tours" id="tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -280,7 +290,7 @@
           <a href="#" class="btn btn--green">Discover all tours</a>
         </div>
       </section>
-      <section class="section-stories">
+      <section class="section-stories" id="stories">
         <div class="bg-video">
           <video class="bg-video--content" autoplay muted loop>
             <source src="img/video.mp4" type="video/mp4" />
@@ -347,7 +357,7 @@
           <a href="#" class="btn-text">Read all stories &rarr;</a>
         </div>
       </section>
-      <section class="section-book">
+      <section class="section-book" id="book">
         <div class="row">
           <div class="book">
             <div class="book-form">
@@ -483,7 +493,7 @@
           />
         </div>
         <div class="popup-right">
-          <a href="#section-tours" class="popup-close">&times;</a>
+          <a href="#tours" class="popup-close">&times;</a>
           <h2 class="heading-secondary u-margin-bottom-small">
             Start booking now
           </h2>
