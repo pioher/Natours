@@ -4,8 +4,15 @@
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+    @include respond(tab) {
+      margin-bottom: $gutter-vertical-small;
+    }
   }
 
+  @include respond(tab) {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
   @include clearfix;
 
   // Wybiera wszystkie elementry gdzie arybut klasy zaczyna się od "cal-"
@@ -15,6 +22,14 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+      @include respond(tab) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include respond(tab) {
+      width: 100% !important;
     }
   }
 
