@@ -35,11 +35,21 @@
   }
 
   &-left {
+    @include respond(tab-hor) {
+      display: table-row;
+    }
     width: 33.3333333%;
     display: table-cell;
   }
 
   &-right {
+    @include respond(tab-hor) {
+      width: 100%;
+
+      & a {
+        text-align: center;
+      }
+    }
     display: table-cell;
     width: 66.6666667%;
     vertical-align: middle;
@@ -47,6 +57,10 @@
   }
 
   &-image {
+    @include respond(tab-hor) {
+      display: inline-block;
+      width: 50%;
+    }
     display: block;
     width: 100%;
     height: 100%;
@@ -61,6 +75,9 @@
     column-rule: 1px solid $color-grey-light-2;
 
     hyphens: auto;
+    @include respond(tab) {
+      column-count: 1;
+    }
   }
 
   &-close {
